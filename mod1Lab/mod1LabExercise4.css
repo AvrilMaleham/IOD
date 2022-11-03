@@ -1,0 +1,17 @@
+div {
+    border:1px solid rgb(3, 24, 221);
+    width: 200px;
+    height: 200px;
+    background-color: red;
+   margin: auto;
+    text-align: right;
+    float:left;
+    font-size: xx-small;
+    text-decoration: underline;
+}
+#num2 {
+    border-radius: 100%;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+}
