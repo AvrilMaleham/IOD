@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="mod2LabExercise1-index.html">Home</a>
+                <a href="mod2LabExercise1-form.html">Form</a>
+            </nav>
+        </header>
+        <main>
+            <form method="POST"
+            action="http://localhost:3000/profile">
+            <section class="fields">
+                <label for="one">First Name:</label>
+                <input id="one" name="one" type="text">
+            </section>
+            <br>
+            <section class="fields">
+                <label for="two">Last Name:</label>
+                <input id="two" name="two" type="text">
+            </section>
+            <br>
+            <section class="fields">
+                <label for="three">Preference:</label>
+                <input type="radio" name="three" id="Summer" value="Summer">
+                <label for="Summer">Summer</label>
+                <input type="radio" name="three" id="Winter" value="Winter">
+                <label for="Winter">Winter</label>
+            </section>
+            <br>
+            <section class="fields">
+                <label for="four">Vehicles Owned:</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br>
+            </section>
+            <br>
+            <section class="fields">
+                <label for="five">Age: </label>
+                <select id="five" name="five">
+                    <option value="0-20">0-20</option>
+                    <option value="20-40">20-40</option>
+                    <option value="40-60">40-60</option>
+                    <option value="60-80">60-80</option>
+                    <option value="80-100">80-100</option>
+                </select>
+                <br>
+                <section class="submission">
+                    <input type="submit" value="Finished!">
+                 </section>
+            </form>
+        </main>
+        <footer>Copyright 2021 &copy;</footer>
+    </body>
+</html>
