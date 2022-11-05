@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    background-color: rgb(248, 237, 224);
+  }
+
+  img {
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  
