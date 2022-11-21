@@ -2,79 +2,111 @@
 <html>
   <head>
     <title>login page</title>
-    <link rel="stylesheet" href="miniProject1Styles.css">
+    <link rel="icon" href="mini1Assets/red.png" type="image/icon type" />
+    <link rel="stylesheet" href="miniProject1Styles.css" />
   </head>
   <body class="bg">
     <header>
-        <section>
-          <h1 class="header1">Welcome to login!</h1>
-        </section>
-        <section class="navbar">
+      <section>
+        <h1 class="header1">Welcome to login!</h1>
+      </section>
+      <section class="navbar">
         <nav>
           <form class="search">
-            <input id="sput" type="text" placeholder="  Search">
+            <input id="sput" type="text" placeholder="  Search" />
             <button id="sbut">Search</button>
           </form>
           <ul class="nav">
-            <li class="navitem" id="noborder" >Navbar</li>
-            <li class="navitem"><a href="">Home</a></li>
+            <li class="navitem" id="noborder">Navbar</li>
+            <li class="navitem"><a href="miniProject1Home.html">Home</a></li>
             <li class="navitem"><a href="">Link</a></li>
-            <li class="navitem" for="dropdown" id="menu" ><a href="">Dropdown &#9660;</a>
+            <li class="navitem" for="dropdown" id="menu">
+              <a href="">Dropdown &#9660;</a>
               <ul class="drop" id="dropdown">
                 <li><a class="list" href="">Page 1</a></li>
                 <li><a class="list" href="">Page 2</a></li>
-               <li><a class="list" href="">Page 3</a></li>
-              </ul></li>
-             <li class="navitem"><a href="">Affiliates</a></li>
+                <li><a class="list" href="">Page 3</a></li>
+              </ul>
+            </li>
+            <li class="navitem"><a href="">Affiliates</a></li>
           </ul>
         </nav>
       </section>
     </header>
     <main>
       <h1 class="header1">Enter here</h1>
-        <form class="login">
-          <section>
+      <form class="login">
+        <section class="deets">
           <label for="uname">Enter username</label>
-          <input class="fput" type="text" placeholder="username" name="uname" required>
-         <label for="psw">Enter password</label>
-          <input class="fput" type="password" placeholder="password" name="psw" required>
+          <input
+            class="fput"
+            type="text"
+            placeholder="username"
+            name="uname"
+            required
+          />
+          <label for="psw">Enter password</label>
+          <input
+            class="fput"
+            type="password"
+            placeholder="password"
+            name="psw"
+            required
+          />
         </section>
-        <br>
-          <section id="radios">
-            <div id="male" class="rput">
-              <label for="Male">Male</label>
-            <input type="radio" name="gender" id="Male"   value="Male">
+        <br />
+        <section id="radios">
+          <div id="male" class="rput">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Male" value="Male" />
           </div>
-            <div id="female" class="rput">
-              <label for="Female">Female</label>
-            <input type="radio" name="gender" id="Female"   value="Female">
+          <div id="female" class="rput">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Female" value="Female" />
           </div>
-            <div id="nope" class="rput">
-              <label for="Nope">Nope</label>
-            <input  type="radio" name="gender" id="Nope"   value="Nope">
+          <div id="nope" class="rput">
+            <label for="Nope">Nope</label>
+            <input type="radio" name="gender" id="Nope" value="Nope" />
           </div>
         </section>
-        <br>
+        <br />
         <section>
           <button id="fbut" type="submit">LOGIN</button>
         </section>
-        <br>
-        <p>Not registered? <a id="acclink" href="">Create an account</a> </p>
-        </form>
-        <article>
-            <h1 id="header2">Disclaimers</h1>
-            <ul id="bullet">
-                <li class="dis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin arcu nec pulvinar. </li>
-                <br>
-                <li class="dis">liquam tempus nulla pharetra enim tincidunt, in semper est aliquet. Proin massa lectus, pharetra sit amet aliquam sagittis, iaculis vitae dui. </li>
-                <br>
-                <li class="dis">Vestibulum leo quam, hendrerit id rutrum in, sodales quis sapien. Morbi feugiat nec turpis vel varius. Donec finibus venenatis vulputate.</li>
-                <br>
-                <li class="dis">Morbi ac tristique lectus. Quisque vulputate mattis est, et consectetur neque cursus a.</li>
-                <br>
-                <li class="dis">Scelerisque Sed eget dictum tortor. Duis a lectus lobortis, condimentum erat a, volutpat nunc. </li>
-              </ul>
-        </article>
+        <br />
+        <p>Not registered? <a class="acclink" href="">Create an account</a></p>
+      </form>
+      <article>
+        <h1 id="header2">Disclaimers</h1>
+        <ul id="bullet">
+          <li class="dis">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            sollicitudin arcu nec pulvinar.
+          </li>
+          <br />
+          <li class="dis">
+            liquam tempus nulla pharetra enim tincidunt, in semper est aliquet.
+            Proin massa lectus, pharetra sit amet aliquam sagittis, iaculis
+            vitae dui.
+          </li>
+          <br />
+          <li class="dis">
+            Vestibulum leo quam, hendrerit id rutrum in, sodales quis sapien.
+            Morbi feugiat nec turpis vel varius. Donec finibus venenatis
+            vulputate.
+          </li>
+          <br />
+          <li class="dis">
+            Morbi ac tristique lectus. Quisque vulputate mattis est, et
+            consectetur neque cursus a.
+          </li>
+          <br />
+          <li class="dis">
+            Scelerisque Sed eget dictum tortor. Duis a lectus lobortis,
+            condimentum erat a, volutpat nunc.
+          </li>
+        </ul>
+      </article>
     </main>
   </body>
 </html>

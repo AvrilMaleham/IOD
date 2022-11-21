@@ -1,12 +1,14 @@
-.first-table, .td1, .tr1, .th1 {
-    border-style: none;
- }
-
- .second-table tr:nth-child(odd) { 
-    background-color: #D6EEEE; 
-  } 
-
-.th22 {
-    background-color: rgb(114, 114, 205);
+.first-table,
+.td1,
+.tr1,
+.th1 {
+  border-style: none;
 }
 
+.second-table tr:nth-child(odd) {
+  background-color: #d6eeee;
+}
+
+.th22 {
+  background-color: rgb(114, 114, 205);
+}
