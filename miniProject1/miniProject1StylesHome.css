@@ -25,6 +25,7 @@
 .dis {
   background-color: white;
 }
+
 .container {
   padding: 2px 16px;
 }
@@ -38,7 +39,8 @@ footer a {
 
 footer {
   padding: 7px 10px 50px 10px;
-  width: 100%;
+  width: 320px;
+  margin:auto;
 }
 
 .f {
@@ -50,6 +52,10 @@ footer {
 .footl {
   display: inline;
   padding: 1px 10px 1px 10px;
+}
+
+.picture {
+  width:100%;
 }
 
 @media screen and (max-width: 783px) {
@@ -70,4 +76,5 @@ footer {
   .loginsect {
     margin: 10px;
   }
+  
 }

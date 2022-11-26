@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "one": "Mary",
+    "two": "132 Hinemoa St",
+    "three": "Wellington",
+    "four": "South Island",
+    "five": "5789",
+    "six": "top gear",
+    "seven": "1 year"
+  }
+}

@@ -238,14 +238,15 @@ article {
 }
 
 @media screen and (max-width: 782px) {
-  .bg {
-  }
+
   main {
     margin: 85px 10px 85px 10px;
   }
+
   article {
     width: 250px;
   }
+
   .deets {
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +275,7 @@ article {
     width: 100%;
     margin: 0;
   }
+
   #noborder {
     justify-content: center;
     width: 250px;
@@ -283,6 +285,7 @@ article {
 }
 
 @media screen and (min-width: 737px) and (max-width: 961px) {
+
   main {
     margin: 85px 100px 85px 100px;
   }
