@@ -152,7 +152,7 @@ function questionEight() {
 function questionNine() {
   //Write constructor function here
 
-  class Accumulator {
+ /* class Accumulator {
     constructor(startingValue) {
       this.startingValue = startingValue;
       this.value = 0;
@@ -161,9 +161,18 @@ function questionNine() {
       var p = prompt();
       this.value = this.startingValue += +p;
     }
+  } */
+
+  class Accumulator {
+    constructor(startingValue) {
+      this.value = startingValue;
+    }
+    read() {
+     this.value = +prompt() + this.value;
+    }
   }
 
-  let accumulator = new Accumulator(5); //initial value 1
+  let accumulator = new Accumulator(1); //initial value 1
 
   accumulator.read(); //adds the user-entered value
 
