@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+
+
+body,
+
+html {
+
+  font-family: "Roboto", sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: content-box;
+
+  text-align: center;
+
+}
+
+
+
+.bg {
+
+  background-image: url("mini1Assets/oyo.jpg");
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-attachment: fixed;
+
+  padding-bottom: 250px;
+
+}
+
+
+
+header {
+
+  padding-top: 10px;
+
+}
+
+
+
+.header1 {
+
+  color: rgb(80, 79, 79);
+
+  text-shadow: 1px 1px #ffffff;
+
+  font-size: 40px;
+
+  margin-bottom: 7px;
+
+}
+
+/* ideally all h1 elements would be of this design. you should aim to use as few
+
+items as you can. just entering h1 would have removed the need to make this class */
+
+nav {
+
+  width: 100%;
+
+}
+
+/* If the external container, nav, is set to flex it allows you to place
+
+the internal elements in any way you see fit. */
+
+.navbar {
+
+  background-color: rgb(255, 255, 255, 0.5);
+
+  display: inline-flex;
+
+  width: 100%;
+
+  height: 37px;
+
+  justify-content: center;
+
+}
+
+
+
+.nav {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0; 
+
+  overflow: hidden;
+
+}
+
+
+
+.navitem {
+
+  float: left;
+
+  width: 100px;
+
+  padding: 7px 10px 1px 10px;
+
+  border: 2px solid black;
+
+  height: 25px;
+
+  font-family: inherit;
+
+  /* justify-content: center;  the text align centre put into the body tag
+
+  lets all further elements inherit the value for text.*/
+
+}
+
+
+
+.navitem a {
+
+  text-decoration: none;
+
+  color: black;
+
+  font-size: small;
+
+  /* justify-items: center; */
+
+}
+
+
+
+#noborder {
+
+  border: none;
+
+  width: 60px;
+
+  /* text-align: center; */
+
+  padding-top: 8px ; 
+
+  /* the other padding amounts are still specified. */
+
+}
+
+
+
+a:hover {
+
+  color: grey;
+
+}
+
+
+
+.drop {
+
+  display: none;
+
+  position: absolute;
+
+  background-color: #f9f9f9;
+
+  width: 80px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  /* z-index: 1; this is only needed when you have a conflict of contenet
+
+  and want to bring the correct one to the front. at current this already works*/
+
+  /* padding: 10px; */
+
+  /* margin: 10px; */
+
+  /* text-align: center; */
+
+  list-style-type: none;
+
+}
+
+
+
+.list {
+
+  color: black;
+
+  padding: 12px 16px;
+
+  text-decoration: none;
+
+  display: block;
+
+  text-align: left;
+
+}
+
+
+
+#menu:hover .drop {
+
+  display: block;
+
+}
+
+/* this all works for the dropdown. the easiest way thought is to use select
+
+https://www.w3schools.com/tags/tag_select.asp */
+
+
+
+.search {
+
+  display: inline-flex;
+
+  float: right;
+
+  padding: 1px;
+
+  margin: 3px 10px 1px 1px;
+
+  height: 25px;
+
+}
+
+
+
+#sput {
+
+  padding: 0;
+
+  margin: 0;
+
+  height: 28px;
+
+  border-start-start-radius: 5px;
+
+  border-end-start-radius: 5px;
+
+  border: 1px solid rgba(171, 168, 168, 0.891);
+
+}
+
+
+
+#sbut {
+
+  padding: 0;
+
+  margin: 0;
+
+  /* this padding margi;n keeps turning up. you can use a css reset file
+
+  to fix all of this before you start. */
+
+  height: 30px;
+
+  width: 50px;
+
+  background-color: rgba(59, 96, 77, 0);
+
+  color: rgba(49, 128, 87, 0.891);
+
+  border-start-end-radius: 5px;
+
+  border-end-end-radius: 5px;
+
+  border: 1px solid rgba(49, 128, 87, 0.891);
+
+}
+
+
+
+main {
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  margin: 85px 235px 85px 235px;
+
+  /* using width here allows it to be more responsive. manually setting
+
+  a margin requires exact pixel amounts for every screen. not the biggest 
+
+  problem but width: 60% eg.. is easier to manage. also by setting margin
+
+  inserting sidebars later etc.. becomes a problem. elements where possible 
+
+  should only take up the space they need to. */
+
+  /* text-align: center; */
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+}
+
+
+
+.login {
+
+  color: #ffffff;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  font-size: smaller;
+
+}
+
+
+
+::placeholder {
+
+  color: rgb(101, 100, 100);
+
+}
+
+
+
+.fput {
+
+  border: 1px solid rgba(171, 168, 168, 0.891);
+
+  height: 15px;
+
+  width: 135px;
+
+}
+
+
+
+.rput {
+
+    width: 185px;
+
+}
+
+
+
+#male {
+
+  text-align: left;
+
+  /* width: 185px; */
+
+}
+
+
+
+ /* #female {
+
+  text-align: center; 
+
+   width: 185px; 
+
+}  */
+
+
+
+#nope {
+
+  text-align: right;
+
+}
+
+
+
+#radios {
+
+  margin: 60px ;
+
+}
+
+
+
+#fbut {
+
+  height: 30px;
+
+  width: 55px;
+
+  background-color: rgb(43, 167, 32);
+
+  color: rgb(255, 255, 255);
+
+  border: 2px solid rgb(0, 0, 0);
+
+  font-size: medium;
+
+  padding: 0px;
+
+  margin: 0px;
+
+  font-weight: 300;
+
+}
+
+
+
+.acclink {
+
+  color: rgb(28, 101, 227);
+
+}
+
+
+
+article {
+
+  background-color: #ffffff;
+
+  width: 500px;
+
+  margin: auto;
+
+  margin-top: 35px;
+
+  text-align: left;
+
+  padding-bottom: 1px;
+
+  padding-right: 10px;
+
+  border-radius: 5px;
+
+}
+
+
+
+#header2 {
+
+    /* this can be done as an h2 so that all secondary headings have
+
+    the same style. */
+
+  font-size: 40px;
+
+  text-align: center;
+
+  margin: 0px;
+
+  color: rgb(63, 63, 63);
+
+}
+
+
+
+.dis {
+
+  border-radius: 5px;
+
+}
+
+
+
+.dis:hover {
+
+  background-color: rgb(137, 154, 224);
+
+  list-style: none;
+
+  color: #ffffff;
+
+}
+
+
+
+@media screen and (max-width: 782px) {
+
+
+
+  main {
+
+    margin: 85px 10px 85px 10px;
+
+  }
+
+
+
+  article {
+
+    width: 250px;
+
+  }
+
+
+
+  .deets {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+
+
+  .navbar {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 100%;
+
+  }
+
+
+
+  .navitem {
+
+    justify-content: center;
+
+    width: 250px;
+
+    float: none;
+
+    margin: auto;
+
+  }
+
+
+
+  .search {
+
+    float: none;
+
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 0;
+
+  }
+
+
+
+  #noborder {
+
+    justify-content: center;
+
+    width: 250px;
+
+    float: none;
+
+    margin: auto;
+
+  }
+
+}
+
+
+
+@media screen and (min-width: 737px) and (max-width: 961px) {
+
+
+
+  main {
+
+    margin: 85px 100px 85px 100px;
+
+  }
+
+}
+
+/* this is a good example of desktop first vs mobile first.
+
+the design can be more or less complex to make look good based off
+
+initial design choice. see my example for how you can play with elements
+
+to get different options at different sizes. that said yours is more elegant
+
+a solution for the design. */
